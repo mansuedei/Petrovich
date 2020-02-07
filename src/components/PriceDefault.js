@@ -13,9 +13,9 @@ export default function PriceDefault({
 	}
 
 	return !isAltUnitActive ? (
-		<p class="product_price_default">
-			<span class="retailPrice">{(priceRetail * amount).toFixed(2)}</span>
-			<span class="rouble__i black__i">
+		<p className="product_price_default">
+			<span className="retailPrice">{(priceRetail * amount).toFixed(2)}</span>
+			<span className="rouble__i black__i">
 				<SVGIcon
 					name="rouble_gray"
 					width="20px"
@@ -25,11 +25,11 @@ export default function PriceDefault({
 			</span>
 		</p>
 	) : (
-		<p class="product_price_default">
-			<span class="retailPrice">
+		<p className="product_price_default">
+			<span className="retailPrice">
 				{(priceRetailAlt * amount * unitRatioAlt).toFixed(2)}
 			</span>
-			<span class="rouble__i black__i">
+			<span className="rouble__i black__i">
 				<SVGIcon
 					name="rouble_gray"
 					width="20px"
@@ -45,7 +45,7 @@ export default function PriceDefault({
 	/* <svg
 	width="20px"
 	height="30px"
-	class=""
+	className=""
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 7 50 50"
 	xmlns:xlink="http://www.w3.org/1999/xlink"

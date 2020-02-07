@@ -20,7 +20,7 @@ export default function Product({ product }) {
 	const [activeUnit, setUnit] = useState(unitList[0]);
 	const isAltUnitActive = unitList.indexOf(activeUnit);
 	return (
-		<div class="product product_horizontal">
+		<div className="product product_horizontal">
 			<MetaInfo code={product.code} isActive={product.isActive} />
 			<Photo primaryImageUrl={product.primaryImageUrl} />
 			<Title title={product.title} />

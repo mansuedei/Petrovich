@@ -2,17 +2,17 @@ import React from "react";
 
 export default function UnitsDesc({ unitList, activeUnit, setUnit }) {
 	return (
-		<div class="product_units">
-			<div class="unit--wrapper">
+		<div className="product_units">
+			<div className="unit--wrapper">
 				{unitList.map((unit, index) => (
 					<div
 						key={`${unit}${index}`}
-						class={`unit--select ${unit === activeUnit ? "unit--active" : ""}`}
+						className={`unit--select ${unit === activeUnit ? "unit--active" : ""}`}
 						onClick={() => {
 							setUnit(unit);
 						}}
 					>
-						<p class="ng-binding">За {unit}</p>
+						<p className="ng-binding">За {unit}</p>
 					</div>
 				))}
 			</div>
@@ -20,9 +20,9 @@ export default function UnitsDesc({ unitList, activeUnit, setUnit }) {
 	);
 }
 
-// <div class="unit--select unit--active">
-//     <p class="ng-binding">За м. кв.</p>
+// <div className="unit--select unit--active">
+//     <p className="ng-binding">За м. кв.</p>
 // </div>
-// <div class="unit--select">
-//     <p class="ng-binding">За упаковку</p>
+// <div className="unit--select">
+//     <p className="ng-binding">За упаковку</p>
 // </div>

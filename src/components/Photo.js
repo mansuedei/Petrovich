@@ -8,8 +8,8 @@ export default function Photo({ primaryImageUrl }) {
 	const PRODUCT_ID = buildPhotoLink(primaryImageUrl);
 	return (
 		<>
-			<div class="product_photo">
-				<a href="#" class="url--link product__link">
+			<div className="product_photo">
+				<a href="#" className="url--link product__link">
 					<img src={PRODUCT_ID}></img>
 				</a>
 			</div>

@@ -24,21 +24,21 @@ export default function Count({ setAmount, amount }) {
 	}
 
 	return (
-		<div class="product__wrapper">
-			<div class="product_count_wrapper">
-				<div class="stepper">
+		<div className="product__wrapper">
+			<div className="product_count_wrapper">
+				<div className="stepper">
 					<input
 						onChange={setValue}
-						class="product__count stepper-input"
+						className="product__count stepper-input"
 						type="text"
 						value={amount}
 					></input>
-					<span onClick={increment} class="stepper-arrow up"></span>
-					<span onClick={decrement} class="stepper-arrow down"></span>
+					<span onClick={increment} className="stepper-arrow up"></span>
+					<span onClick={decrement} className="stepper-arrow down"></span>
 				</div>
 			</div>
 			<span
-				class="btn btn_cart"
+				className="btn btn_cart"
 				data-url="/cart/"
 				data-product-id="9bf0afd7-5190-11e5-b9a9-00259036a192"
 			>
@@ -49,7 +49,7 @@ export default function Count({ setAmount, amount }) {
 					height="20px"
 					viewBox="0 0 20 20"
 				/>
-				<span class="ng-binding">В корзину</span>
+				<span className="ng-binding">В корзину</span>
 			</span>
 		</div>
 	);

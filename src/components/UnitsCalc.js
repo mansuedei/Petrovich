@@ -6,14 +6,14 @@ export default function UnitsCalc({ unitRatioAlt, amount, unitList }) {
 	}
 	return (
 		<>
-			<div class="list--unit-padd"></div>
-			<div class="list--unit-desc">
-				<div class="unit--info">
-					<div class="unit--desc-i"></div>
-					<div class="unit--desc-t">
+			<div className="list--unit-padd"></div>
+			<div className="list--unit-desc">
+				<div className="unit--info">
+					<div className="unit--desc-i"></div>
+					<div className="unit--desc-t">
 						<p>
-							<span class="ng-binding">Продается {unitList[0]}:</span>
-							<span class="unit--infoInn">
+							<span className="ng-binding">Продается {unitList[0]}:</span>
+							<span className="unit--infoInn">
 								{amount} {unitList[0]} = {(amount * unitRatioAlt).toFixed(2)}{" "}
 								{unitList[1]}
 							</span>

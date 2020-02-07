@@ -13,12 +13,12 @@ export default function PriceClubCard({
 	}
 
 	return !isAltUnitActive ? (
-		<p class="product_price_club_card">
-			<span class="product_price_club_card_text">
+		<p className="product_price_club_card">
+			<span className="product_price_club_card_text">
 				По карте <br /> клуба <br />
 			</span>
-			<span class="goldPrice">{(priceGold * amount).toFixed(2)}</span>
-			<span class="rouble__i black__i">
+			<span className="goldPrice">{(priceGold * amount).toFixed(2)}</span>
+			<span className="rouble__i black__i">
 				<SVGIcon
 					name="rouble_black"
 					width="20px"
@@ -28,14 +28,14 @@ export default function PriceClubCard({
 			</span>
 		</p>
 	) : (
-		<p class="product_price_club_card">
-			<span class="product_price_club_card_text">
+		<p className="product_price_club_card">
+			<span className="product_price_club_card_text">
 				По карте <br /> клуба <br />
 			</span>
-			<span class="goldPrice">
+			<span className="goldPrice">
 				{(priceGoldAlt * amount * unitRatioAlt).toFixed(2)}
 			</span>
-			<span class="rouble__i black__i">
+			<span className="rouble__i black__i">
 				<SVGIcon
 					name="rouble_black"
 					width="20px"

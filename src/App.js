@@ -4,14 +4,14 @@ import productData from "./products.json";
 
 function App() {
 	// const products = productData;
-	const products = [productData[0], productData[1], productData[2]];
+	const products = productData;
 
 	return (
 		<>
-			<main class="grid container">
-				<div class="sub_category_page">
-					<div class="column_right column_right_products_container">
-						<div class="product__area">
+			<main className="grid container">
+				<div className="sub_category_page">
+					<div className="column_right column_right_products_container">
+						<div className="product__area">
 							<ProductsList products={products} />
 						</div>
 					</div>
