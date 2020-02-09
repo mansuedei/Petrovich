@@ -7,7 +7,9 @@ npm i
 ### Build
 
 npm run build
+
 npm i serve
+
 serve -s build
 
 ### Production
