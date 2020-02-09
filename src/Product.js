@@ -52,7 +52,11 @@ export default function Product({ product }) {
 					unitList={unitList}
 				/>
 			)}
-			<Count setAmount={setAmount} amount={amount} />
+			<Count
+				setAmount={setAmount}
+				amount={amount}
+				productId={product.productId}
+			/>
 		</div>
 	);
 }

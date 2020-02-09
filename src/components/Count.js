@@ -1,7 +1,7 @@
 import React from "react";
 import SVGIcon from "./Sprite";
 
-export default function Count({ setAmount, amount }) {
+export default function Count({ setAmount, amount, productId }) {
 	function increment() {
 		setAmount(amount + 1);
 	}
@@ -40,7 +40,7 @@ export default function Count({ setAmount, amount }) {
 			<span
 				className="btn btn_cart"
 				data-url="/cart/"
-				data-product-id="9bf0afd7-5190-11e5-b9a9-00259036a192"
+				data-product-id={productId}
 			>
 				<SVGIcon
 					className="ic ic_cart"
