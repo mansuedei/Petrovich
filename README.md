@@ -1,17 +1,9 @@
 ## Для запуска моего приложения:
 
-git clone https://github.com/mansuedei/Petrovich
+1. git clone https://github.com/mansuedei/Petrovich
 
-npm i
+2. npm i
 
-### Build
+3. npm run build
 
-npm run build
-
-npm i serve
-
-serve -s build
-
-### Production
-
-npm run start
+Далее, необходимо либо следовать инструкциям в консоли (npm i serve; serve -s build), либо напрямую открыть index.html в папке build.
