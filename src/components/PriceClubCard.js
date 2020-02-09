@@ -12,29 +12,16 @@ export default function PriceClubCard({
 		amount = 1;
 	}
 
-	return !isAltUnitActive ? (
+	const finalClubPrice = !isAltUnitActive
+		? (priceGold * amount).toFixed(2)
+		: (priceGoldAlt * amount * unitRatioAlt).toFixed(2);
+
+	return (
 		<p className="product_price_club_card">
 			<span className="product_price_club_card_text">
 				По карте <br /> клуба <br />
 			</span>
-			<span className="goldPrice">{(priceGold * amount).toFixed(2)}</span>
-			<span className="rouble__i black__i">
-				<SVGIcon
-					name="rouble_black"
-					width="20px"
-					height="30px"
-					viewBox="0 7 50 50"
-				/>
-			</span>
-		</p>
-	) : (
-		<p className="product_price_club_card">
-			<span className="product_price_club_card_text">
-				По карте <br /> клуба <br />
-			</span>
-			<span className="goldPrice">
-				{(priceGoldAlt * amount * unitRatioAlt).toFixed(2)}
-			</span>
+			<span className="goldPrice">{finalClubPrice}</span>
 			<span className="rouble__i black__i">
 				<SVGIcon
 					name="rouble_black"

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import MetaInfo from "./components/MetaInfo";
-import Photo from "./components/Photo";
-import Title from "./components/Title";
-import Tags from "./components/Tags";
-import UnitsDesc from "./components/UnitsDesc";
-import PriceClubCard from "./components/PriceClubCard";
-import PriceDefault from "./components/PriceDefault";
-import PricePoints from "./components/PricePoints";
-import UnitsCalc from "./components/UnitsCalc";
-import Count from "./components/Count";
+import {
+	MetaInfo,
+	Photo,
+	Title,
+	Tags,
+	UnitsDesc,
+	PriceClubCard,
+	PriceDefault,
+	PricePoints,
+	UnitsCalc,
+	Count
+} from "./components";
 
 export default function Product({ product }) {
 	const hasOnlyOneUnit = product.unit === product.unitAlt;
