@@ -1,6 +1,7 @@
 ## Для запуска моего приложения:
 
 git clone https://github.com/mansuedei/Petrovich
+
 npm i
 
 ### Build
